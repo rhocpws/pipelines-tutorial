@@ -17,7 +17,7 @@ spec:
   type: image
   params:
     - name: url
-      value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/api:latest
+      value: image-registry.openshift-image-registry.svc:5000/bn-native-pipelines/api:latest
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
@@ -37,4 +37,4 @@ spec:
   type: image
   params:
     - name: url
-      value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/ui:latest
+      value: image-registry.openshift-image-registry.svc:5000/bn-native-pipelines/ui:latest
