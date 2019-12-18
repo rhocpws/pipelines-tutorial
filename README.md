@@ -126,8 +126,8 @@ Note that only the requirement for a git repository is declared on the task and 
 Install the `apply-manifests` and `update-deployment` tasks from the repository using `oc` or `kubectl`, which you will need for creating a pipeline in the next section:
 
 ```bash
-$ oc create -f https://raw.githubusercontent.com/openshift/pipelines-tutorial/master/pipeline/update_deployment_task.yaml
-$ oc create -f https://raw.githubusercontent.com/openshift/pipelines-tutorial/master/pipeline/apply_manifest_task.yaml
+$ oc create -f https://raw.githubusercontent.com/rhocpws/pipelines-tutorial/master/pipeline/update_deployment_task.yaml
+$ oc create -f https://raw.githubusercontent.com/rhocpws/pipelines-tutorial/master/pipeline/apply_manifest_task.yaml
 
 ```
 
@@ -294,7 +294,7 @@ The execution order of task is determined by dependencies that are defined betwe
 Create the pipeline by running the following:
 
 ```bash
-$ oc create -f https://raw.githubusercontent.com/openshift/pipelines-tutorial/master/pipeline/pipeline.yaml
+$ oc create -f https://raw.githubusercontent.com/rhocpws/pipelines-tutorial/master/pipeline/pipeline.yaml
 ```
 
 Alternatively, in the OpenShift web console, you can click on the **+** at the top right of the screen while you are in the **pipelines-tutorial** project:
@@ -383,7 +383,7 @@ spec:
 Create the above pipeline resources via the OpenShift web console or by running the following:
 
 ```bash
-$ oc create -f https://raw.githubusercontent.com/openshift/pipelines-tutorial/master/pipeline/resources.yaml
+$ oc create -f https://raw.githubusercontent.com/rhocpws/pipelines-tutorial/master/pipeline/resources.yaml
 ```
 
 > **Note** :-
